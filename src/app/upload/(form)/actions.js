@@ -31,6 +31,7 @@ async function uploadFileToS3(file, fileName) {
     console.log("File uploaded successfully:", response);
     return fileName;
   } catch (error) {
+    console.log(error)
     throw error;
   }
 }
